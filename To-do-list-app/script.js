@@ -18,4 +18,26 @@ function addTask() {
 
   }
   inputBox.value = "";
+  saveData();
 }
+
+listcontainer.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.classList.toggle("checked");
+    saveData();
+  } else if(e.target.tagName === "SPAN") {
+    e.target.parentElement.remove();
+    saveData();
+  }
+}, false);
+
+function saveData(){
+  localStorage.setItem("data", listcontainer.innerHTML);
+}
+
+function showData() {
+  listcontainer.innerHTML = localStorage.getItem("data");
+}
+
+showData();
+
