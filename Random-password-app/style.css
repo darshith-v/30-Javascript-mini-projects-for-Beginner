@@ -2,6 +2,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #002339;
+  color: #fff;
+}
+
+.container{
+  margin: 12%;
+  width: 600px;
+  padding: 25px 35px;
+}
+
+.container h1{
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.container h1 span{
+  color: green;
+  border-bottom: 4px solid green;
+}
+
+.display{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 5px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.display input{
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  font-size: 25px;
+  /* flex: 1; */
+}
+
+.display img{
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.container button{
+  border: none;
+  width: 300px;
+  padding: 15px;
+  margin: 25px 5px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: #fff;
+  background-color: green;
+}
+
+.container button:hover{
+  background: rgb(1, 171, 1);
+  cursor: pointer;
 }
 
