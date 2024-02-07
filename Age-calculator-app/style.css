@@ -73,3 +73,13 @@
   background-size: 30px;
   cursor: pointer;
 }
+
+.result{
+  font-size: 18px;
+  color: white;
+}
+
+.result span{
+  color: orange;
+  font-weight: bold;
+}
