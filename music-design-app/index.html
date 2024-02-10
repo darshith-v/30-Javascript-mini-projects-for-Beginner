@@ -23,14 +23,14 @@
     <h1>Desperado</h1>
     <p>Raghav</p>
 
-    <audio controls>
+    <audio id="song">
       <source src="media/Desperado Song Raghav.mp3" type="audio/mpeg">
     </audio>
     <input type="range" value="0" id="progress">
 
     <div class="controls">
       <div><i class="fa-solid fa-backward"></i></div>
-      <div><i class="fa-solid fa-play"></i></div>
+      <div onclick="playPause()"><i class="fa-solid fa-play" id="js-play-Button"></i></div>
       <div><i class="fa-solid fa-forward"></i></div>
     </div>
 
